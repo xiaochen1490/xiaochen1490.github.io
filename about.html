@@ -9,12 +9,16 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="nav-left">
                 <li><a href="index.html">首页</a></li>
                 <li><a href="about.html">关于我</a></li>
                 <li><a href="projects.html">项目展示</a></li>
                 <li><a href="blog.html">博客</a></li>
                 <li><a href="contact.html">联系方式</a></li>
+            </ul>
+            <ul class="nav-right" id="auth-buttons">
+                <li><a href="login.html" class="auth-btn login">登录</a></li>
+                <li><a href="register.html" class="auth-btn register">注册</a></li>
             </ul>
         </nav>
     </header>
@@ -76,7 +80,7 @@
                         <h3>Web开发工程师</h3>
                         <p class="company">XX网络科技</p>
                         <p class="period">2018 - 2020</p>
-                        <p>参与多个Web应用项目的开发，负责前端架构设计和实现。</p>
+                        <p>参与多个Web应用项目的开发，���责前端架构设计和实现。</p>
                     </div>
                 </div>
             </div>
@@ -86,5 +90,7 @@
     <footer>
         <p>&copy; 2024 我的个人网站. 保留所有权利。</p>
     </footer>
+
+    <script type="module" src="js/auth.js"></script>
 </body>
 </html> 
