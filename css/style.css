@@ -451,3 +451,99 @@ footer {
         padding: 20px;
     }
 }
+
+/* 认证页面样式 */
+.auth-section {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 60px 20px;
+    min-height: calc(100vh - var(--header-height) - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.auth-form .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.auth-form .submit-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.auth-form .submit-btn:hover {
+    background-color: var(--hover-color);
+}
+
+.auth-form .submit-btn:disabled {
+    background-color: var(--light-text);
+    cursor: not-allowed;
+}
+
+.auth-links {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    color: var(--hover-color);
+}
+
+/* 错误消息样式 */
+.error-message {
+    color: #dc2626;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* 成功消息样式 */
+.success-message {
+    color: #059669;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
