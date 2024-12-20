@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客 - 个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="projects.html">项目展示</a></li>
+                <li><a href="blog.html">博客</a></li>
+                <li><a href="contact.html">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-section">
+            <h1>技术博客</h1>
+            
+            <div class="blog-filters">
+                <button class="filter-btn active">全部</button>
+                <button class="filter-btn">前端开发</button>
+                <button class="filter-btn">后端技术</button>
+                <button class="filter-btn">开发工具</button>
+                <button class="filter-btn">心得体会</button>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog1.jpg" alt="博客配图">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="date">2024-01-15</span>
+                            <span class="category">前端开发</span>
+                        </div>
+                        <h2>React Hooks 最佳实践与性能优化</h2>
+                        <p class="excerpt">
+                            探讨React Hooks的使用技巧，以及如何通过优化提升应用性能...
+                        </p>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog2.jpg" alt="博客配图">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="date">2024-01-10</span>
+                            <span class="category">后端技术</span>
+                        </div>
+                        <h2>Node.js 异步编程深度解析</h2>
+                        <p class="excerpt">
+                            深入理解Node.js的异步机制，包括Promise、async/await的使用...
+                        </p>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog3.jpg" alt="博客配图">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="date">2024-01-05</span>
+                            <span class="category">开发工具</span>
+                        </div>
+                        <h2>Git 工作流程与团队协作</h2>
+                        <p class="excerpt">
+                            分享在团队开发中使用Git的经验，包括分支管理和版本控制策略...
+                        </p>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-link">&laquo; 上一页</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">下一页 &raquo;</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 我的个人网站. 保留所有权利。</p>
+    </footer>
+</body>
+</html> 
