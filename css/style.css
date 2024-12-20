@@ -43,6 +43,7 @@ nav {
     padding: 0 20px;
     height: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -50,6 +51,15 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
+}
+
+.nav-left {
+    flex: 1;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
 }
 
 nav a {
@@ -61,6 +71,81 @@ nav a {
 
 nav a:hover {
     color: var(--primary-color);
+}
+
+.auth-btn {
+    padding: 8px 20px;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.auth-btn.login {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.auth-btn.login:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.auth-btn.register {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.auth-btn.register:hover {
+    background-color: var(--hover-color);
+}
+
+/* 用户头像和下拉菜单 */
+.user-menu {
+    position: relative;
+    display: none;
+}
+
+.user-menu.active {
+    display: block;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    min-width: 150px;
+    display: none;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 16px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--light-background);
 }
 
 /* 主要内容样式 */
@@ -436,6 +521,14 @@ footer {
     nav ul {
         gap: 15px;
     }
+
+    nav {
+        padding: 0 15px;
+    }
+
+    .auth-btn {
+        padding: 6px 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -449,6 +542,16 @@ footer {
 
     .featured-card {
         padding: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .nav-left {
+        display: none;
+    }
+
+    .nav-right {
+        margin-left: auto;
     }
 }
 
