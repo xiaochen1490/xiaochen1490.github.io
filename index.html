@@ -134,8 +134,10 @@
     </footer>
 
     <script>
-        // API 基础URL
-        const API_BASE_URL = 'http://localhost:3000/api';
+        // API 基础URL - 根据环境选择不同的服务器地址
+        const API_BASE_URL = window.location.hostname === 'localhost' 
+            ? 'http://localhost:3000/api'
+            : 'https://你的服务器域名/api';  // 这里需要替换为您的实际服务器地址
 
         // 工具函数：显示/隐藏元素
         function toggleElement(elementId, show) {

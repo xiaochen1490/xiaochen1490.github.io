@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -20,6 +21,12 @@ const corsOptions = {
 // 中间件
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
+app.use(express.static('.')); // 提供静态文件服务
+
+// 根路径处理
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 // 模拟数据库
 let users = [];
@@ -113,5 +120,5 @@ app.get('/api/user-data', authenticateToken, (req, res) => {
 
 // 启动服务器
 app.listen(PORT, () => {
-    console.log(`服务器运行在 http://localhost:${PORT}`);
+    console.log(`服��器运行在 http://localhost:${PORT}`);
 }); 
